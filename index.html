@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Negotiation Club Zurich</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Archivo+Narrow:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#1565C0;--bg:#fff;--ink:#000;--soft:#EAF1FA;--text:#1a1a1a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0a0a;--ink:#fff;--soft:#10233d;--text:#e8e8e8}}
+:root[data-theme="dark"]{--bg:#0a0a0a;--ink:#fff;--soft:#10233d;--text:#e8e8e8}
+*{box-sizing:border-box;margin:0}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--text);font-family:'Archivo',Arial,sans-serif;line-height:1.6;overflow-x:hidden}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:4px solid var(--blue);display:flex;align-items:center;justify-content:space-between;padding:10px 5vw}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--ink);font-size:1.05rem;line-height:1.1}
+.brand svg, .brand img{width:44px;height:44px;display:block}
+nav{display:flex;gap:6px}
+nav button{font:600 1rem 'Archivo Narrow',Arial,sans-serif;background:none;border:0;color:var(--ink);padding:10px 16px;cursor:pointer;clip-path:polygon(0 0,100% 0,calc(100% - 10px) 100%,0 100%)}
+nav button[aria-selected=true]{background:var(--blue);color:#fff}
+nav button:focus-visible,.btn:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.view{display:none}.view.on{display:block}
+.hero{position:relative;background:var(--blue);color:#fff;padding:12vh 5vw 16vh;clip-path:polygon(0 0,100% 0,100% 82%,0 100%);overflow:hidden}
+.hero:before{content:"";position:absolute;right:-8vw;top:0;width:46vw;height:140%;background:#fff;opacity:.95;clip-path:polygon(40% 0,100% 0,100% 100%,0 100%)}
+.hero:after{content:"";position:absolute;right:12vw;bottom:14%;width:0;height:0;border-left:70px solid transparent;border-right:70px solid transparent;border-bottom:120px solid #000;opacity:.9}
+.hero>*{position:relative;z-index:1}
+.hero h1{font-weight:800;font-size:clamp(2.4rem,7vw,5.2rem);line-height:1;max-width:11ch;margin-bottom:22px}
+.hero p{max-width:34ch;font-size:1.2rem;margin-bottom:28px}
+.btn{display:inline-block;background:#000;color:#fff;border:0;font:600 1.05rem 'Archivo Narrow',Arial,sans-serif;padding:14px 28px;cursor:pointer;text-decoration:none;clip-path:polygon(0 0,100% 0,calc(100% - 14px) 100%,0 100%)}
+.btn:hover{background:#222}
+section{padding:60px 5vw;max-width:1100px;margin:auto}
+h2{font-weight:800;font-size:clamp(1.7rem,4vw,2.5rem);color:var(--ink);margin-bottom:18px;padding-left:18px;border-left:12px solid var(--blue)}
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:start}
+.about p+p{margin-top:14px}
+.facts{background:var(--soft);padding:26px;clip-path:polygon(0 0,100% 0,100% calc(100% - 28px),calc(100% - 28px) 100%,0 100%)}
+.facts dt{font-weight:800;color:var(--blue)}.facts dd{margin:0 0 14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.card{border:3px solid var(--ink);padding:24px;position:relative}
+.card:nth-child(2){background:var(--blue);color:#fff;border-color:var(--blue)}
+.card:nth-child(3){background:var(--ink);color:var(--bg)}
+.card h3{font-size:1.2rem;margin-bottom:8px}
+.card:before{content:"";position:absolute;top:-3px;right:-3px;width:26px;height:26px;background:var(--blue);clip-path:polygon(0 0,100% 0,100% 100%)}
+.card:nth-child(2):before{background:#fff}
+.band{background:var(--soft);clip-path:polygon(0 8%,100% 0,100% 92%,0 100%);padding:70px 0}
+.band section{padding-top:20px;padding-bottom:20px}
+.sess{list-style:none;padding:0}
+.sess li{padding:14px 0;border-bottom:2px solid var(--ink);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.sess b{color:var(--blue)}
+.cform{display:grid;gap:16px;max-width:620px}
+label{font-weight:600;color:var(--ink);display:block;margin-bottom:4px}
+input,textarea,select{width:100%;font:inherit;padding:12px;border:3px solid var(--ink);background:var(--bg);color:var(--text);border-radius:0}
+textarea{min-height:150px;resize:vertical}
+.ok{display:none;background:var(--blue);color:#fff;padding:18px;font-weight:600}
+.contact-wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:40px}
+.shape{min-height:240px;background:var(--blue);clip-path:polygon(0 0,100% 0,100% 100%);position:relative}
+.shape:after{content:"";position:absolute;left:0;bottom:0;width:60%;height:60%;background:var(--ink);clip-path:polygon(0 0,100% 100%,0 100%)}
+footer{background:var(--ink);color:var(--bg);padding:26px 5vw;text-align:center;font-size:.9rem;margin-top:40px;border-top:8px solid var(--blue)}
+@media(max-width:760px){.about,.contact-wrap{grid-template-columns:1fr}.hero:before{width:70vw;opacity:.18}.brand span{display:none}.hero:after{right:6vw;bottom:20%;transform:scale(.6)}}
+@media(prefers-reduced-motion:no-preference){.hero h1{animation:in .8s ease-out both}@keyframes in{from{transform:translateX(-30px);opacity:0}}}
+</style></head><body>
+<header>
+<div class="brand">
+  <svg viewBox="0 0 500 500" width="44" height="44" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background: White Top-Right, Blue Bottom-Left Split -->
+    <rect width="500" height="500" fill="#ffffff" />
+    <polygon points="0,0 0,500 500,500" fill="#1565C0" />
+    
+    <!-- Handshake Outline Graphics -->
+    <g fill="none" stroke="#000000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Left Sleeve / Arm -->
+      <path d="M 0,160 L 135,178 L 110,320 L 0,290 Z" fill="none" />
+      
+      <!-- Right Sleeve / Arm -->
+      <path d="M 500,160 L 365,188 L 370,305 L 500,280 Z" fill="none" />
+      
+      <!-- Handshake Clasp Detail -->
+      <path d="M 135,178 C 190,185 240,160 260,170 C 290,185 330,200 365,188" />
+      <path d="M 160,200 C 210,210 260,200 325,280 C 350,290 360,280 370,305" />
+      <path d="M 215,280 C 235,320 280,335 315,310 C 330,300 330,270 305,270" />
+      <path d="M 190,285 C 200,310 230,330 255,305" />
+      <path d="M 170,275 C 180,295 205,310 225,290" />
+      <path d="M 145,260 C 155,275 175,285 190,270" />
+    </g>
+  </svg>
+  <span>Negotiation<br>Club Zurich</span>
+</div>
+<nav role="tablist"><button role="tab" id="t-home" aria-selected="true" data-v="home">Home</button><button role="tab" id="t-contact" aria-selected="false" data-v="contact">Get in touch</button></nav>
+</header>
+
+<main>
+<div class="view on" id="home">
+<div class="hero"><h1>Negotiate with confidence.</h1><p>A Zurich community for students and professionals who want to master the art of reaching better agreements.</p><button class="btn" data-go="contact">Get in touch</button></div>
+
+<section class="about"><div><h2>About the club</h2>
+<p>Negotiation Club Zurich brings together people who want to practice negotiation in a safe, structured and friendly setting. Whether you are preparing for a salary talk, a business deal or a difficult conversation, you will find a place to try, fail and improve.</p>
+<p>Our sessions combine short inputs on proven frameworks with live role-plays and honest peer feedback. Every member leaves with tools they can use the next day.</p></div>
+<dl class="facts"><dt>Where</dt><dd>Zurich, Switzerland</dd><dt>Language</dt><dd>English</dd><dt>Who can join</dt><dd>Students, young professionals and anyone curious about negotiation</dd><dt>Format</dt><dd>In-person sessions and workshops</dd></dl></section>
+
+<div class="band"><section><h2>What we do</h2>
+<div class="grid">
+<div class="card"><h3>Role-play simulations</h3><p>Negotiate realistic cases in pairs and teams, then debrief what worked.</p></div>
+<div class="card"><h3>Skills workshops</h3><p>Learn preparation, anchoring, BATNA, creating value and closing the deal.</p></div>
+<div class="card"><h3>Networking</h3><p>Meet motivated people from different universities, companies and industries.</p></div>
+</div></section></div>
+
+<section><h2>How a session works</h2>
+<ul class="sess">
+<li><b>Warm-up</b><span>Short introduction to the topic and a key concept</span></li>
+<li><b>Negotiate</b><span>Live case in small groups with assigned roles</span></li>
+<li><b>Debrief</b><span>Feedback, lessons learned and open discussion</span></li>
+<li><b>Connect</b><span>Informal exchange after the session</span></li>
+</ul></section>
+
+<section><h2>Join us</h2><p style="margin-bottom:22px;max-width:60ch">New members are welcome at any time. Send us a message to hear about upcoming events.</p><button class="btn" data-go="contact">Contact the club</button></section>
+</div>
+
+<div class="view" id="contact"><section><h2>Get in touch</h2>
+<div class="contact-wrap"><div>
+<p style="margin-bottom:22px">Questions about membership, events or partnerships? Send us a message and we will reply as soon as possible.</p>
+<form class="cform" id="f" novalidate>
+<div><label for="n">Name</label><input id="n" required autocomplete="name"></div>
+<div><label for="e">Email</label><input id="e" type="email" required autocomplete="email"></div>
+<div><label for="s">Subject</label><select id="s"><option>Becoming a member</option><option>Upcoming events</option><option>Partnerships</option><option>Other</option></select></div>
+<div><label for="m">Message</label><textarea id="m" required></textarea></div>
+<button type="submit" class="btn" style="justify-self:start">Send message</button>
+<div class="ok" id="ok" role="status">Thank you! Your message is ready to go. We will get back to you soon.</div>
+<div class="ok" id="err" role="alert" style="background:#000">Please fill in your name, a valid email and a message.</div>
+</form></div><div class="shape" aria-hidden="true"></div></div></section></div>
+</main>
+<footer>&copy; 2026 Negotiation Club Zurich</footer>
+<script>
+function show(v){document.querySelectorAll('.view').forEach(x=>x.classList.toggle('on',x.id===v));document.querySelectorAll('nav button').forEach(b=>b.setAttribute('aria-selected',b.dataset.v===v));window.scrollTo(0,0)}
+document.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>show(b.dataset.v));
+document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>show(b.dataset.go));
+document.getElementById('f').addEventListener('submit',e=>{e.preventDefault();const ok=n.value.trim()&&/\S+@\S+\.\S+/.test(e2.value)&&m.value.trim();document.getElementById('ok').style.display=ok?'block':'none';document.getElementById('err').style.display=ok?'none':'block';if(ok)e.target.reset()});
+const e2=document.getElementById('e');
+</script></body></html>
