@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8">
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Negotiation Club Zurich</title>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Archivo+Narrow:wght@600&display=swap" rel="stylesheet">
@@ -55,23 +57,18 @@ textarea{min-height:150px;resize:vertical}
 footer{background:var(--ink);color:var(--bg);padding:26px 5vw;text-align:center;font-size:.9rem;margin-top:40px;border-top:8px solid var(--blue)}
 @media(max-width:760px){.about,.contact-wrap{grid-template-columns:1fr}.hero:before{width:70vw;opacity:.18}.brand span{display:none}.hero:after{right:6vw;bottom:20%;transform:scale(.6)}}
 @media(prefers-reduced-motion:no-preference){.hero h1{animation:in .8s ease-out both}@keyframes in{from{transform:translateX(-30px);opacity:0}}}
-</style></head><body>
+</style>
+</head>
+<body>
+
 <header>
 <div class="brand">
   <svg viewBox="0 0 500 500" width="44" height="44" xmlns="http://www.w3.org/2000/svg">
-    <!-- Background: White Top-Right, Blue Bottom-Left Split -->
     <rect width="500" height="500" fill="#ffffff" />
     <polygon points="0,0 0,500 500,500" fill="#1565C0" />
-    
-    <!-- Handshake Outline Graphics -->
     <g fill="none" stroke="#000000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
-      <!-- Left Sleeve / Arm -->
       <path d="M 0,160 L 135,178 L 110,320 L 0,290 Z" fill="none" />
-      
-      <!-- Right Sleeve / Arm -->
       <path d="M 500,160 L 365,188 L 370,305 L 500,280 Z" fill="none" />
-      
-      <!-- Handshake Clasp Detail -->
       <path d="M 135,178 C 190,185 240,160 260,170 C 290,185 330,200 365,188" />
       <path d="M 160,200 C 210,210 260,200 325,280 C 350,290 360,280 370,305" />
       <path d="M 215,280 C 235,320 280,335 315,310 C 330,300 330,270 305,270" />
@@ -82,68 +79,113 @@ footer{background:var(--ink);color:var(--bg);padding:26px 5vw;text-align:center;
   </svg>
   <span>Negotiation<br>Club Zurich</span>
 </div>
-<nav role="tablist"><button role="tab" id="t-home" aria-selected="true" data-v="home">Home</button><button role="tab" id="t-contact" aria-selected="false" data-v="contact">Get in touch</button></nav>
+<nav role="tablist">
+  <button role="tab" id="t-home" aria-selected="true" data-v="home">Home</button>
+  <button role="tab" id="t-contact" aria-selected="false" data-v="contact">Get in touch</button>
+</nav>
 </header>
 
 <main>
+<!-- HOME VIEW -->
 <div class="view on" id="home">
-<div class="hero"><h1>Negotiate with confidence.</h1><p>A Zurich community for students and professionals who want to master the art of reaching better agreements.</p><button class="btn" data-go="contact">Get in touch</button></div>
+  <div class="hero">
+    <h1>Negotiate with confidence.</h1>
+    <p>A Zurich community for students and professionals who want to master the art of reaching better agreements.</p>
+    <button class="btn" data-go="contact">Get in touch</button>
+  </div>
 
-<section class="about"><div><h2>About the club</h2>
-<p>Negotiation Club Zurich brings together people who want to practice negotiation in a safe, structured and friendly setting. Whether you are preparing for a salary talk, a business deal or a difficult conversation, you will find a place to try, fail and improve.</p>
-<p>Our sessions combine short inputs on proven frameworks with live role-plays and honest peer feedback. Every member leaves with tools they can use the next day.</p></div>
-<dl class="facts"><dt>Where</dt><dd>Zurich, Switzerland</dd><dt>Language</dt><dd>English</dd><dt>Who can join</dt><dd>Students, young professionals and anyone curious about negotiation</dd><dt>Format</dt><dd>In-person sessions and workshops</dd></dl></section>
+  <section class="about">
+    <div>
+      <h2>About the club</h2>
+      <p>Negotiation Club Zurich brings together people who want to practice negotiation in a safe, structured and friendly setting. Whether you are preparing for a salary talk, a business deal or a difficult conversation, you will find a place to try, fail and improve.</p>
+      <p>Our sessions combine short inputs on proven frameworks with live role-plays and honest peer feedback. Every member leaves with tools they can use the next day.</p>
+    </div>
+    <dl class="facts">
+      <dt>Where</dt><dd>Zurich, Switzerland</dd>
+      <dt>Language</dt><dd>English</dd>
+      <dt>Who can join</dt><dd>Students, young professionals and anyone curious about negotiation</dd>
+      <dt>Format</dt><dd>In-person sessions and workshops</dd>
+    </dl>
+  </section>
 
-<div class="band"><section><h2>What we do</h2>
-<div class="grid">
-<div class="card"><h3>Role-play simulations</h3><p>Negotiate realistic cases in pairs and teams, then debrief what worked.</p></div>
-<div class="card"><h3>Skills workshops</h3><p>Learn preparation, anchoring, BATNA, creating value and closing the deal.</p></div>
-<div class="card"><h3>Networking</h3><p>Meet motivated people from different universities, companies and industries.</p></div>
-</div></section></div>
+  <div class="band">
+    <section>
+      <h2>What we do</h2>
+      <div class="grid">
+        <div class="card"><h3>Role-play simulations</h3><p>Negotiate realistic cases in pairs and teams, then debrief what worked.</p></div>
+        <div class="card"><h3>Skills workshops</h3><p>Learn preparation, anchoring, BATNA, creating value and closing the deal.</p></div>
+        <div class="card"><h3>Networking</h3><p>Meet motivated people from different universities, companies and industries.</p></div>
+      </div>
+    </section>
+  </div>
 
-<section><h2>How a session works</h2>
-<ul class="sess">
-<li><b>Warm-up</b><span>Short introduction to the topic and a key concept</span></li>
-<li><b>Negotiate</b><span>Live case in small groups with assigned roles</span></li>
-<li><b>Debrief</b><span>Feedback, lessons learned and open discussion</span></li>
-<li><b>Connect</b><span>Informal exchange after the session</span></li>
-</ul></section>
+  <section>
+    <h2>How a session works</h2>
+    <ul class="sess">
+      <li><b>Warm-up</b><span>Short introduction to the topic and a key concept</span></li>
+      <li><b>Negotiate</b><span>Live case in small groups with assigned roles</span></li>
+      <li><b>Debrief</b><span>Feedback, lessons learned and open discussion</span></li>
+      <li><b>Connect</b><span>Informal exchange after the session</span></li>
+    </ul>
+  </section>
 
-<section><h2>Join us</h2><p style="margin-bottom:22px;max-width:60ch">New members are welcome at any time. Send us a message to hear about upcoming events.</p><button class="btn" data-go="contact">Contact the club</button></section>
+  <section>
+    <h2>Join us</h2>
+    <p style="margin-bottom:22px;max-width:60ch">New members are welcome at any time. Send us a message to hear about upcoming events.</p>
+    <button class="btn" data-go="contact">Contact the club</button>
+  </section>
 </div>
 
-<form action="https://formspree.io/f/mjygnaog" method="POST" class="cform" id="f">
-  <div>
-    <label for="n">Name</label>
-    <input id="n" type="text" name="name" required autocomplete="name">
-  </div>
-  <div>
-    <label for="e">Email</label>
-    <input id="e" type="email" name="email" required autocomplete="email">
-  </div>
-  <div>
-    <label for="s">Subject</label>
-    <select id="s" name="subject">
-      <option>Becoming a member</option>
-      <option>Upcoming events</option>
-      <option>Partnerships</option>
-    </select>
-  </div>
-  <div>
-    <label for="m">Message</label>
-    <textarea id="m" name="message" required></textarea>
-  </div>
-  <button type="submit" class="btn" style="justify-self:start">Send message</button>
-  <div class="ok" id="ok" role="status" style="display:none;">Thank you! Your message has been sent.</div>
-  <div class="ok" id="err" role="alert" style="background:#000; display:none;">Please fill in your name, a valid email and a message.</div>
-</form>
-</form></div><div class="shape" aria-hidden="true"></div></div></section></div>
+<!-- CONTACT VIEW -->
+<div class="view" id="contact">
+  <section>
+    <h2>Get in touch</h2>
+    <div class="contact-wrap">
+      <div>
+        <p style="margin-bottom:22px">Questions about membership, events or partnerships? Send us a message and we will reply as soon as possible.</p>
+        
+        <form action="https://formspree.io/f/mjygnaog" method="POST" class="cform" id="f">
+          <div>
+            <label for="n">Name</label>
+            <input id="n" type="text" name="name" required autocomplete="name">
+          </div>
+          <div>
+            <label for="e">Email</label>
+            <input id="e" type="email" name="email" required autocomplete="email">
+          </div>
+          <div>
+            <label for="s">Subject</label>
+            <select id="s" name="subject">
+              <option>Becoming a member</option>
+              <option>Upcoming events</option>
+              <option>Partnerships</option>
+            </select>
+          </div>
+          <div>
+            <label for="m">Message</label>
+            <textarea id="m" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn" style="justify-self:start">Send message</button>
+        </form>
+      </div>
+      <div class="shape" aria-hidden="true"></div>
+    </div>
+  </section>
+</div>
+
 </main>
+
 <footer>&copy; 2026 Negotiation Club Zurich</footer>
+
 <script>
-function show(v){document.querySelectorAll('.view').forEach(x=>x.classList.toggle('on',x.id===v));document.querySelectorAll('nav button').forEach(b=>b.setAttribute('aria-selected',b.dataset.v===v));window.scrollTo(0,0)}
+function show(v){
+  document.querySelectorAll('.view').forEach(x=>x.classList.toggle('on',x.id===v));
+  document.querySelectorAll('nav button').forEach(b=>b.setAttribute('aria-selected',b.dataset.v===v));
+  window.scrollTo(0,0);
+}
 document.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>show(b.dataset.v));
 document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>show(b.dataset.go));
-document.getElementById('f').addEventListener('submit',e=>{e.preventDefault();const ok=n.value.trim()&&/\S+@\S+\.\S+/.test(e2.value)&&m.value.trim();document.getElementById('ok').style.display=ok?'block':'none';document.getElementById('err').style.display=ok?'none':'block';if(ok)e.target.reset()});
-const e2=document.getElementById('e');
-</script></body></html>
+</script>
+
+</body>
+</html>
