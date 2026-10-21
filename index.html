@@ -112,17 +112,31 @@ footer{background:var(--ink);color:var(--bg);padding:26px 5vw;text-align:center;
 <section><h2>Join us</h2><p style="margin-bottom:22px;max-width:60ch">New members are welcome at any time. Send us a message to hear about upcoming events.</p><button class="btn" data-go="contact">Contact the club</button></section>
 </div>
 
-<div class="view" id="contact"><section><h2>Get in touch</h2>
-<div class="contact-wrap"><div>
-<p style="margin-bottom:22px">Questions about membership, events or partnerships? Send us a message and we will reply as soon as possible.</p>
-<form class="cform" id="f" novalidate>
-<div><label for="n">Name</label><input id="n" required autocomplete="name"></div>
-<div><label for="e">Email</label><input id="e" type="email" required autocomplete="email"></div>
-<div><label for="s">Subject</label><select id="s"><option>Becoming a member</option><option>Upcoming events</option><option>Partnerships</option><option>Other</option></select></div>
-<div><label for="m">Message</label><textarea id="m" required></textarea></div>
-<button type="submit" class="btn" style="justify-self:start">Send message</button>
-<div class="ok" id="ok" role="status">Thank you! Your message is ready to go. We will get back to you soon.</div>
-<div class="ok" id="err" role="alert" style="background:#000">Please fill in your name, a valid email and a message.</div>
+<form action="https://formspree.io/f/mjygnaog" method="POST" class="cform" id="f">
+  <div>
+    <label for="n">Name</label>
+    <input id="n" type="text" name="name" required autocomplete="name">
+  </div>
+  <div>
+    <label for="e">Email</label>
+    <input id="e" type="email" name="email" required autocomplete="email">
+  </div>
+  <div>
+    <label for="s">Subject</label>
+    <select id="s" name="subject">
+      <option>Becoming a member</option>
+      <option>Upcoming events</option>
+      <option>Partnerships</option>
+    </select>
+  </div>
+  <div>
+    <label for="m">Message</label>
+    <textarea id="m" name="message" required></textarea>
+  </div>
+  <button type="submit" class="btn" style="justify-self:start">Send message</button>
+  <div class="ok" id="ok" role="status" style="display:none;">Thank you! Your message has been sent.</div>
+  <div class="ok" id="err" role="alert" style="background:#000; display:none;">Please fill in your name, a valid email and a message.</div>
+</form>
 </form></div><div class="shape" aria-hidden="true"></div></div></section></div>
 </main>
 <footer>&copy; 2026 Negotiation Club Zurich</footer>
