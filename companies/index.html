@@ -1,1 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
+<title>Corporate Negotiation Workshops in Zurich | Negotiation Club Zurich</title>
+<meta name="description" content="Explore corporate negotiation workshops and collaboration opportunities in Zurich. Negotiation Club Zurich offers practical learning through negotiation simulations, interactive exercises and skills development.">
+<meta name="author" content="Negotiation Club Zurich">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1565C0">
+
+<link rel="canonical" href="https://negotiationclubzurich.ch/companies/">
+<link rel="icon" href="/Logo_6.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Corporate Negotiation Workshops | Negotiation Club Zurich">
+<meta property="og:description" content="Explore practical negotiation workshops, simulations and potential collaborations for companies and organisations in Zurich.">
+<meta property="og:url" content="https://negotiationclubzurich.ch/companies/">
+<meta property="og:image" content="https://negotiationclubzurich.ch/Logo_6.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Archivo+Narrow:wght@600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Corporate Negotiation Workshops | Negotiation Club Zurich",
+  "url": "https://negotiationclubzurich.ch/companies/",
+  "description": "Information about practical negotiation workshops and collaboration opportunities for companies and organisations in Zurich.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Negotiation Club Zurich",
+    "url": "https://negotiationclubzurich.ch/"
+  },
+  "about": {
+    "@type": "Organization",
+    "name": "Negotiation Club Zurich",
+    "url": "https://negotiationclubzurich.ch/",
+    "areaServed": {
+      "@type": "City",
+      "name": "Zurich"
+    },
+    "knowsAbout": [
+      "Business negotiation",
+      "Negotiation training",
+      "Communication",
+      "Conflict resolution",
+      "Negotiation workshops"
+    ]
+  }
+}
+</script>
+
+<style>
+:root {
+  --blue: #1565C0;
+  --bg: #fff;
+  --ink: #000;
+  --soft: #EAF1FA;
+  --text: #1a1a1a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Archivo', Arial, sans-serif;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+a { color: var(--blue); }
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg);
+  border-bottom: 4px solid var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5vw;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 800;
+  color: var(--ink);
+  font-size: 1.05rem;
+  line-height: 1.1;
+  text-decoration: none;
+}
+
+.brand img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  display: inline-block;
+  padding: 10px 14px;
+  color: var(--ink);
+  text-decoration: none;
+  font: 600 1rem 'Archivo Narrow', Arial, sans-serif;
+  transition: background .2s ease, color .2s ease;
+}
+
+.main-nav .nav-link:hover,
+.main-nav .nav-link:focus-visible {
+  background: var(--soft);
+  color: var(--blue);
+}
+
+.main-nav .active {
+  background: var(--soft);
+  color: var(--blue);
+}
+
+.main-nav .nav-contact {
+  background: var(--blue);
+  color: #fff;
+  padding: 11px 20px;
+  clip-path: polygon(0 0,100% 0,calc(100% - 12px) 100%,0 100%);
+}
+
+.main-nav .nav-contact:hover {
+  background: #0d4d96;
+  color: #fff;
+}
+
+.main-nav a:focus-visible,
+.btn:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.hero {
+  position: relative;
+  background: var(--blue);
+  color: #fff;
+  padding: 100px 5vw 130px;
+  clip-path: polygon(0 0,100% 0,100% 84%,0 100%);
+  overflow: hidden;
+}
+
+.hero:before {
+  content: "";
+  position: absolute;
+  right: -8vw;
+  top: 0;
+  width: 46vw;
+  height: 140%;
+  background: #fff;
+  opacity: .95;
+  clip-path: polygon(40% 0,100% 0,100% 100%,0 100%);
+}
+
+.hero:after {
+  content: "";
+  position: absolute;
+  right: 12vw;
+  bottom: 14%;
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 120px solid #000;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem,7vw,5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  max-width: 12ch;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 48ch;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: 0;
+  font: 600 1.05rem 'Archivo Narrow', Arial, sans-serif;
+  padding: 14px 28px;
+  cursor: pointer;
+  text-decoration: none;
+  clip-path: polygon(0 0,100% 0,calc(100% - 14px) 100%,0 100%);
+}
+
+.btn:hover { background: #222; }
+
+.btn-blue { background: var(--blue); }
+.btn-blue:hover { background: #0d4d96; }
+
+section {
+  padding: 65px 5vw;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  font-size: clamp(1.7rem,4vw,2.5rem);
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 22px;
+  padding-left: 18px;
+  border-left: 12px solid var(--blue);
+}
+
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+
+p + p { margin-top: 14px; }
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.facts {
+  background: var(--soft);
+  padding: 28px;
+  clip-path: polygon(0 0,100% 0,100% calc(100% - 28px),calc(100% - 28px) 100%,0 100%);
+}
+
+.facts dt {
+  font-weight: 800;
+  color: var(--blue);
+}
+
+.facts dd { margin: 0 0 14px; }
+
+.band {
+  background: var(--soft);
+  clip-path: polygon(0 5%,100% 0,100% 95%,0 100%);
+  padding: 75px 0;
+}
+
+.band section {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.lead {
+  max-width: 760px;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+  gap: 22px;
+}
+
+.card {
+  border: 3px solid var(--ink);
+  padding: 25px;
+  position: relative;
+  background: var(--bg);
+}
+
+.card:nth-child(2) {
+  background: var(--blue);
+  color: #fff;
+  border-color: var(--blue);
+}
+
+.card:nth-child(3) {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 26px;
+  height: 26px;
+  background: var(--blue);
+  clip-path: polygon(0 0,100% 0,100% 100%);
+}
+
+.card:nth-child(2):before { background: #fff; }
+
+.steps { list-style: none; padding: 0; }
+
+.steps li {
+  padding: 18px 0;
+  border-bottom: 2px solid var(--ink);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.steps strong { color: var(--blue); }
+
+.highlight {
+  background: var(--soft);
+  border-left: 7px solid var(--blue);
+  padding: 25px;
+  margin-top: 30px;
+}
+
+.faq-item {
+  padding: 20px 0;
+  border-bottom: 2px solid var(--ink);
+}
+
+.faq-item h3 { color: var(--ink); }
+
+.cta {
+  background: var(--blue);
+  color: #fff;
+  padding: 50px;
+}
+
+.cta h2 {
+  color: #fff;
+  border-color: #000;
+}
+
+.cta p {
+  max-width: 60ch;
+  margin-bottom: 22px;
+}
+
+footer {
+  background: var(--ink);
+  color: var(--bg);
+  padding: 28px 5vw;
+  text-align: center;
+  font-size: .9rem;
+  border-top: 8px solid var(--blue);
+}
+
+footer a { color: #fff; }
+
+@media(max-width:900px) {
+  header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .main-nav {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .intro-grid { grid-template-columns: 1fr; }
+}
+
+@media(max-width:760px) {
+  .hero { padding: 80px 5vw 110px; }
+
+  .hero:before {
+    width: 70vw;
+    opacity: .18;
+  }
+
+  .hero:after {
+    right: 6vw;
+    bottom: 20%;
+    transform: scale(.6);
+  }
+
+  .band { clip-path: none; }
+  .cta { padding: 32px 24px; }
+}
+
+@media(max-width:520px) {
+  .brand span { display: none; }
+  .main-nav { gap: 3px; }
+
+  .main-nav a {
+    padding: 9px 10px;
+    font-size: .95rem;
+  }
+
+  .main-nav .nav-contact { padding: 9px 13px; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  html { scroll-behavior: auto; }
+  *,*::before,*::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a class="brand" href="/" aria-label="Negotiation Club Zurich home">
+    <img src="/Logo_6.png" alt="Negotiation Club Zurich logo">
+    <span>Negotiation<br>Club Zurich</span>
+  </a>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="/" class="nav-link">Home</a>
+    <a href="/universities/" class="nav-link">Universities</a>
+    <a href="/companies/" class="nav-link active" aria-current="page">Companies</a>
+    <a href="/workshops/" class="nav-link">Workshops</a>
+    <a href="/contact/" class="nav-contact">Get in touch</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-content">
+    <h1>Better negotiation. Stronger business relationships.</h1>
+
+    <p>
+      Practical negotiation learning for professionals and organisations.
+      Explore interactive workshops, realistic simulations and
+      opportunities to develop negotiation skills.
+    </p>
+
+    <a class="btn" href="#collaborate">Explore collaboration</a>
+  </div>
+</div>
+
+<!-- INTRODUCTION -->
+<section>
+  <div class="intro-grid">
+    <div>
+      <h2>Negotiation is a business skill</h2>
+
+      <p>
+        Negotiation is part of everyday business. Teams negotiate with
+        clients, suppliers, colleagues and business partners. They
+        navigate competing interests, manage expectations and work
+        towards agreements.
+      </p>
+
+      <p>
+        Strong negotiation requires more than persuasive communication.
+        It involves preparation, listening, understanding interests,
+        evaluating alternatives and identifying opportunities to
+        create value.
+      </p>
+
+      <p>
+        Negotiation Club Zurich provides a setting to practise these
+        capabilities through structured exercises, role-play simulations
+        and peer learning.
+      </p>
+    </div>
+
+    <dl class="facts">
+      <dt>Location</dt>
+      <dd>Zurich, Switzerland</dd>
+
+      <dt>Working language</dt>
+      <dd>English</dd>
+
+      <dt>Audience</dt>
+      <dd>Companies, professionals, teams and organisations</dd>
+
+      <dt>Learning formats</dt>
+      <dd>Interactive workshops, simulations and practical exercises</dd>
+
+      <dt>Collaboration</dt>
+      <dd>Corporate workshops, joint events and learning initiatives</dd>
+    </dl>
+  </div>
+</section>
+
+<!-- BUSINESS VALUE -->
+<div class="band">
+<section>
+  <h2>Why invest in negotiation skills?</h2>
+
+  <p class="lead">
+    Negotiation capabilities can support better communication,
+    more constructive discussions and stronger professional
+    relationships across different business contexts.
+  </p>
+
+  <div class="grid">
+    <article class="card">
+      <h3>Commercial discussions</h3>
+      <p>
+        Prepare for conversations about pricing, contracts,
+        supplier relationships and commercial agreements.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Internal collaboration</h3>
+      <p>
+        Navigate differing priorities, communicate interests
+        and find constructive solutions across teams.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Client relationships</h3>
+      <p>
+        Develop listening, questioning and problem-solving
+        approaches that support productive client discussions.
+      </p>
+    </article>
+  </div>
+</section>
+</div>
+
+<!-- WORKSHOP FORMATS -->
+<section>
+  <h2>Possible corporate workshop formats</h2>
+
+  <p class="lead">
+    We welcome conversations with companies interested in practical
+    negotiation learning. Workshop formats can be explored according
+    to your team's objectives, experience and business context.
+  </p>
+
+  <div class="grid">
+    <article class="card">
+      <h3>Negotiation fundamentals</h3>
+      <p>
+        Explore preparation, objectives, alternatives, interests
+        and the structure of an effective negotiation.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Business negotiation simulations</h3>
+      <p>
+        Practise realistic commercial scenarios involving different
+        roles, interests, proposals and possible outcomes.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Communication and influence</h3>
+      <p>
+        Develop active listening, effective questioning,
+        persuasive communication and constructive dialogue.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Team learning sessions</h3>
+      <p>
+        Bring colleagues together to practise negotiation approaches,
+        exchange perspectives and reflect on their experiences.
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- TOPICS -->
+<div class="band">
+<section>
+  <h2>Negotiation topics</h2>
+
+  <p class="lead">
+    Depending on the objectives of a potential workshop,
+    exercises can cover a range of practical negotiation frameworks.
+  </p>
+
+  <ul class="steps">
+    <li>
+      <strong>Preparation and objectives</strong>
+      <span>Define priorities, interests and negotiation strategies.</span>
+    </li>
+
+    <li>
+      <strong>BATNA and alternatives</strong>
+      <span>Understand alternatives and assess possible outcomes.</span>
+    </li>
+
+    <li>
+      <strong>Anchoring and offers</strong>
+      <span>Develop approaches to making and responding to proposals.</span>
+    </li>
+
+    <li>
+      <strong>Value creation</strong>
+      <span>Identify shared interests and opportunities for mutual gains.</span>
+    </li>
+
+    <li>
+      <strong>Managing difficult conversations</strong>
+      <span>Navigate disagreement and competing expectations constructively.</span>
+    </li>
+
+    <li>
+      <strong>Closing agreements</strong>
+      <span>Evaluate options and work towards clear, workable agreements.</span>
+    </li>
+  </ul>
+</section>
+</div>
+
+<!-- LEARNING APPROACH -->
+<section>
+  <h2>Learning through practice</h2>
+
+  <p class="lead">
+    Negotiation skills are developed by applying concepts,
+    reflecting on decisions and practising different approaches.
+    Our session format is built around active participation.
+  </p>
+
+  <ul class="steps">
+    <li>
+      <strong>1. Introduce</strong>
+      <span>Explore a negotiation concept or framework.</span>
+    </li>
+
+    <li>
+      <strong>2. Prepare</strong>
+      <span>Review a case, define objectives and plan an approach.</span>
+    </li>
+
+    <li>
+      <strong>3. Practise</strong>
+      <span>Negotiate in pairs or small groups using assigned roles.</span>
+    </li>
+
+    <li>
+      <strong>4. Reflect</strong>
+      <span>Discuss decisions, outcomes and alternative strategies.</span>
+    </li>
+
+    <li>
+      <strong>5. Apply</strong>
+      <span>Identify lessons that can be transferred to professional situations.</span>
+    </li>
+  </ul>
+</section>
+
+<!-- COLLABORATION -->
+<div class="band">
+<section id="collaborate">
+  <h2>Explore a corporate partnership</h2>
+
+  <p class="lead">
+    We are interested in connecting with organisations that value
+    practical learning, professional development and stronger
+    negotiation capabilities.
+  </p>
+
+  <div class="grid">
+    <article class="card">
+      <h3>Human Resources and L&D</h3>
+      <p>
+        Explore negotiation workshops as part of professional
+        development and employee learning initiatives.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Business and commercial teams</h3>
+      <p>
+        Discuss practical exercises related to client conversations,
+        commercial discussions and business relationships.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Entrepreneurs and organisations</h3>
+      <p>
+        Explore negotiation learning opportunities for people
+        navigating partnerships, projects and business development.
+      </p>
+    </article>
+  </div>
+
+  <div class="highlight">
+    <h3>Let's discuss your objectives</h3>
+
+    <p>
+      Tell us about your organisation, the people you would like
+      to involve and the negotiation topics that matter to you.
+      We can explore whether a workshop or another form of
+      collaboration would be suitable.
+    </p>
+
+    <p style="margin-top:20px">
+      <a class="btn btn-blue" href="/contact/">
+        Discuss a corporate partnership
+      </a>
+    </p>
+  </div>
+</section>
+</div>
+
+<!-- FAQ -->
+<section>
+  <h2>Frequently asked questions</h2>
+
+  <div class="faq-item">
+    <h3>Who are corporate negotiation workshops for?</h3>
+    <p>
+      Potential participants include professionals, teams and
+      organisations interested in developing practical negotiation
+      and communication skills.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Do participants need previous negotiation experience?</h3>
+    <p>
+      Not necessarily. Introductory sessions can focus on fundamental
+      concepts, while more specialised formats can explore specific
+      negotiation topics.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Can workshop content be adapted to our organisation?</h3>
+    <p>
+      We welcome discussions about your organisation's learning
+      objectives, audience and preferred format to explore a suitable
+      approach.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Can we explore a joint event or community partnership?</h3>
+    <p>
+      Yes. We are open to enquiries from companies and organisations
+      interested in joint events and other forms of collaboration.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Are sessions conducted in English?</h3>
+    <p>
+      English is the working language of Negotiation Club Zurich.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>How can our company get in touch?</h3>
+    <p>
+      Use the contact page to tell us about your organisation
+      and the collaboration you would like to explore.
+    </p>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section>
+  <div class="cta">
+    <h2>Let's talk about negotiation.</h2>
+
+    <p>
+      Interested in practical negotiation workshops,
+      simulations or a potential corporate collaboration?
+      We would be happy to hear from you.
+    </p>
+
+    <a class="btn" href="/contact/">
+      Get in touch
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Negotiation Club Zurich · Zurich, Switzerland</p>
+
+  <p style="margin-top:8px">
+    <a href="/">Home</a> ·
+    <a href="/universities/">Universities</a> ·
+    <a href="/companies/">Companies</a> ·
+    <a href="/workshops/">Workshops</a> ·
+    <a href="/contact/">Get in touch</a>
+  </p>
+</footer>
+
+</body>
+</html>
