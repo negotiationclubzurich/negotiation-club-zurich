@@ -144,15 +144,77 @@ header{
   object-fit:contain
 }
   
-<nav aria-label="Main navigation">
-  <a href="/">Home</a>
-  <a href="/universities/">For Universities</a>
-  <a href="/companies/">For Companies</a>
-  <a href="/workshops/">Workshops</a>
-  <a href="/#contact">Get in touch</a>
-</nav>
-  
 nav{display:flex;gap:6px;flex-wrap:wrap}
+
+  
+/* Main navigation */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  display: inline-block;
+  padding: 10px 14px;
+  color: var(--ink);
+  text-decoration: none;
+  font: 600 1rem 'Archivo Narrow', Arial, sans-serif;
+  transition: background .2s ease, color .2s ease;
+}
+
+.main-nav .nav-link:hover,
+.main-nav .nav-link:focus-visible {
+  background: var(--soft);
+  color: var(--blue);
+}
+
+.main-nav .nav-contact {
+  background: var(--blue);
+  color: #fff;
+  padding: 11px 20px;
+  clip-path: polygon(0 0,100% 0,calc(100% - 12px) 100%,0 100%);
+}
+
+.main-nav .nav-contact:hover,
+.main-nav .nav-contact:focus-visible {
+  background: #0d4d96;
+  color: #fff;
+}
+
+.main-nav a:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+
+@media(max-width:900px) {
+  header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .main-nav {
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+@media(max-width:520px) {
+  .main-nav {
+    gap: 3px;
+  }
+
+  .main-nav a {
+    padding: 9px 10px;
+    font-size: .95rem;
+  }
+
+  .main-nav .nav-contact {
+    padding: 9px 13px;
+  }
+}
 
 nav button{
   font:600 1rem 'Archivo Narrow',Arial,sans-serif;
@@ -464,11 +526,20 @@ footer a{color:#fff}
     <span>Negotiation<br>Club Zurich</span>
   </a>
 
-  <nav role="tablist" aria-label="Main navigation">
+   <nav class="main-nav" aria-label="Main navigation">
+    <a href="/" class="nav-link">Home</a>
+    <a href="/universities/" class="nav-link">Universities</a>
+    <a href="/companies/" class="nav-link">Companies</a>
+    <a href="/workshops/" class="nav-link">Workshops</a>
+    <a href="/#contact" class="nav-contact">Get in touch</a>
+  </nav>
+</header>
+
+  <!-- nav role="tablist" aria-label="Main navigation">
     <button role="tab" id="t-home" aria-selected="true" aria-controls="home" data-v="home">Home</button>
     <button role="tab" id="t-contact" aria-selected="false" aria-controls="contact" data-v="contact" tabindex="-1">Get in touch</button>
   </nav>
-</header>
+</header -->
 
 <main id="main-content">
 
@@ -722,6 +793,10 @@ function show(v){
     x.classList.toggle('on', active);
     x.hidden = !active;
   });
+
+if (window.location.hash === '#contact') {
+  show('contact');
+}
 
   tabs.forEach(b => {
     const active = b.dataset.v === v;
