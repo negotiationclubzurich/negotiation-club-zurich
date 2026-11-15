@@ -3,110 +3,528 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Negotiation Club Zurich</title>
+
+<title>Negotiation Club Zurich | Negotiation Workshops & Community</title>
+
+<meta name="description" content="Negotiation Club Zurich is an English-speaking community in Zurich for students and professionals. Practise negotiation through role-plays, interactive workshops and partnerships with universities and companies.">
+
+<meta name="robots" content="index, follow">
+<meta name="author" content="Negotiation Club Zurich">
+<meta name="theme-color" content="#1565C0">
+
+<link rel="canonical" href="https://negotiationclubzurich.ch/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Negotiation Club Zurich | Negotiate with Confidence">
+<meta property="og:description" content="An English-speaking Zurich community helping students and professionals develop practical negotiation skills through workshops, role-plays and collaboration.">
+<meta property="og:url" content="https://negotiationclubzurich.ch/">
+<meta property="og:image" content="https://negotiationclubzurich.ch/Logo_6.png">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Negotiation Club Zurich">
+<meta name="twitter:description" content="Practise negotiation. Build confidence. Reach better agreements.">
+
+<link rel="icon" href="Logo_6.png">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Archivo+Narrow:wght@600&display=swap" rel="stylesheet">
+
+<!-- Structured data: helps search engines understand the organisation -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Negotiation Club Zurich",
+  "url": "https://negotiationclubzurich.ch/",
+  "logo": "https://negotiationclubzurich.ch/Logo_6.png",
+  "description": "An English-speaking negotiation community in Zurich offering practical negotiation sessions, role-play simulations and workshops for students and professionals.",
+  "areaServed": {
+    "@type": "City",
+    "name": "Zurich"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Zurich",
+    "addressCountry": "CH"
+  },
+  "knowsAbout": [
+    "Negotiation",
+    "Conflict resolution",
+    "Communication",
+    "Negotiation training",
+    "Business negotiation",
+    "Negotiation workshops"
+  ]
+}
+</script>
+
 <style>
-:root{--blue:#1565C0;--bg:#fff;--ink:#000;--soft:#EAF1FA;--text:#1a1a1a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0a0a;--ink:#fff;--soft:#10233d;--text:#e8e8e8}}
-:root[data-theme="dark"]{--bg:#0a0a0a;--ink:#fff;--soft:#10233d;--text:#e8e8e8}
+:root{
+  --blue:#1565C0;
+  --bg:#fff;
+  --ink:#000;
+  --soft:#EAF1FA;
+  --text:#1a1a1a;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px)
+}
+
+@media(prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0a0a0a;
+    --ink:#fff;
+    --soft:#10233d;
+    --text:#e8e8e8
+  }
+}
+
+:root[data-theme="dark"]{
+  --bg:#0a0a0a;
+  --ink:#fff;
+  --soft:#10233d;
+  --text:#e8e8e8
+}
+
 *{box-sizing:border-box;margin:0}
-html{scroll-padding-top:env(safe-area-inset-top,0px)}
-body{background:var(--bg);color:var(--text);font-family:'Archivo',Arial,sans-serif;line-height:1.6;overflow-x:hidden}
-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:4px solid var(--blue);display:flex;align-items:center;justify-content:space-between;padding:10px 5vw}
-.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--ink);font-size:1.05rem;line-height:1.1}
-.brand svg, .brand img{width:44px;height:44px;display:block}
-nav{display:flex;gap:6px}
-nav button{font:600 1rem 'Archivo Narrow',Arial,sans-serif;background:none;border:0;color:var(--ink);padding:10px 16px;cursor:pointer;clip-path:polygon(0 0,100% 0,calc(100% - 10px) 100%,0 100%)}
-nav button[aria-selected=true]{background:var(--blue);color:#fff}
-nav button:focus-visible,.btn:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
-.view{display:none}.view.on{display:block}
-.hero{position:relative;background:var(--blue);color:#fff;padding:12vh 5vw 16vh;clip-path:polygon(0 0,100% 0,100% 82%,0 100%);overflow:hidden}
-.hero:before{content:"";position:absolute;right:-8vw;top:0;width:46vw;height:140%;background:#fff;opacity:.95;clip-path:polygon(40% 0,100% 0,100% 100%,0 100%)}
-.hero:after{content:"";position:absolute;right:12vw;bottom:14%;width:0;height:0;border-left:70px solid transparent;border-right:70px solid transparent;border-bottom:120px solid #000;opacity:.9}
+
+html{
+  scroll-padding-top:env(safe-area-inset-top,0px);
+  scroll-behavior:smooth
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Archivo',Arial,sans-serif;
+  line-height:1.6;
+  overflow-x:hidden
+}
+
+a{color:var(--blue)}
+a:hover{text-decoration:none}
+
+.skip-link{
+  position:absolute;
+  left:-9999px;
+  top:10px;
+  z-index:20;
+  background:var(--ink);
+  color:var(--bg);
+  padding:12px
+}
+
+.skip-link:focus{left:10px}
+
+header{
+  position:sticky;
+  top:env(safe-area-inset-top,0px);
+  z-index:5;
+  background:var(--bg);
+  border-bottom:4px solid var(--blue);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:10px 5vw
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:800;
+  color:var(--ink);
+  font-size:1.05rem;
+  line-height:1.1;
+  text-decoration:none
+}
+
+.brand img{
+  width:44px;
+  height:44px;
+  display:block;
+  object-fit:contain
+}
+
+nav{display:flex;gap:6px;flex-wrap:wrap}
+
+nav button{
+  font:600 1rem 'Archivo Narrow',Arial,sans-serif;
+  background:none;
+  border:0;
+  color:var(--ink);
+  padding:10px 16px;
+  cursor:pointer;
+  clip-path:polygon(0 0,100% 0,calc(100% - 10px) 100%,0 100%)
+}
+
+nav button[aria-selected=true]{
+  background:var(--blue);
+  color:#fff
+}
+
+nav button:focus-visible,
+.btn:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible{
+  outline:3px solid var(--ink);
+  outline-offset:3px
+}
+
+.view{display:none}
+.view.on{display:block}
+
+.hero{
+  position:relative;
+  background:var(--blue);
+  color:#fff;
+  padding:12vh 5vw 16vh;
+  clip-path:polygon(0 0,100% 0,100% 82%,0 100%);
+  overflow:hidden
+}
+
+.hero:before{
+  content:"";
+  position:absolute;
+  right:-8vw;
+  top:0;
+  width:46vw;
+  height:140%;
+  background:#fff;
+  opacity:.95;
+  clip-path:polygon(40% 0,100% 0,100% 100%,0 100%)
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  right:12vw;
+  bottom:14%;
+  width:0;
+  height:0;
+  border-left:70px solid transparent;
+  border-right:70px solid transparent;
+  border-bottom:120px solid #000;
+  opacity:.9
+}
+
 .hero>*{position:relative;z-index:1}
-.hero h1{font-weight:800;font-size:clamp(2.4rem,7vw,5.2rem);line-height:1;max-width:11ch;margin-bottom:22px}
-.hero p{max-width:34ch;font-size:1.2rem;margin-bottom:28px}
-.btn{display:inline-block;background:#000;color:#fff;border:0;font:600 1.05rem 'Archivo Narrow',Arial,sans-serif;padding:14px 28px;cursor:pointer;text-decoration:none;clip-path:polygon(0 0,100% 0,calc(100% - 14px) 100%,0 100%)}
+
+.hero h1{
+  font-weight:800;
+  font-size:clamp(2.4rem,7vw,5.2rem);
+  line-height:1;
+  max-width:11ch;
+  margin-bottom:22px
+}
+
+.hero p{
+  max-width:40ch;
+  font-size:1.2rem;
+  margin-bottom:28px
+}
+
+.btn{
+  display:inline-block;
+  background:#000;
+  color:#fff;
+  border:0;
+  font:600 1.05rem 'Archivo Narrow',Arial,sans-serif;
+  padding:14px 28px;
+  cursor:pointer;
+  text-decoration:none;
+  clip-path:polygon(0 0,100% 0,calc(100% - 14px) 100%,0 100%)
+}
+
 .btn:hover{background:#222}
-section{padding:60px 5vw;max-width:1100px;margin:auto}
-h2{font-weight:800;font-size:clamp(1.7rem,4vw,2.5rem);color:var(--ink);margin-bottom:18px;padding-left:18px;border-left:12px solid var(--blue)}
-.about{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:start}
-.about p+p{margin-top:14px}
-.facts{background:var(--soft);padding:26px;clip-path:polygon(0 0,100% 0,100% calc(100% - 28px),calc(100% - 28px) 100%,0 100%)}
-.facts dt{font-weight:800;color:var(--blue)}.facts dd{margin:0 0 14px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
-.card{border:3px solid var(--ink);padding:24px;position:relative}
-.card:nth-child(2){background:var(--blue);color:#fff;border-color:var(--blue)}
-.card:nth-child(3){background:var(--ink);color:var(--bg)}
+
+.btn-blue{background:var(--blue)}
+.btn-blue:hover{background:#0d4d96}
+
+section{
+  padding:60px 5vw;
+  max-width:1100px;
+  margin:auto
+}
+
+h2{
+  font-weight:800;
+  font-size:clamp(1.7rem,4vw,2.5rem);
+  color:var(--ink);
+  margin-bottom:18px;
+  padding-left:18px;
+  border-left:12px solid var(--blue)
+}
+
+h3{line-height:1.3}
+
+p+p{margin-top:14px}
+
+.about{
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:40px;
+  align-items:start
+}
+
+.facts{
+  background:var(--soft);
+  padding:26px;
+  clip-path:polygon(0 0,100% 0,100% calc(100% - 28px),calc(100% - 28px) 100%,0 100%)
+}
+
+.facts dt{
+  font-weight:800;
+  color:var(--blue)
+}
+
+.facts dd{margin:0 0 14px}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:22px
+}
+
+.card{
+  border:3px solid var(--ink);
+  padding:24px;
+  position:relative
+}
+
+.card:nth-child(2){
+  background:var(--blue);
+  color:#fff;
+  border-color:var(--blue)
+}
+
+.card:nth-child(3){
+  background:var(--ink);
+  color:var(--bg)
+}
+
 .card h3{font-size:1.2rem;margin-bottom:8px}
-.card:before{content:"";position:absolute;top:-3px;right:-3px;width:26px;height:26px;background:var(--blue);clip-path:polygon(0 0,100% 0,100% 100%)}
+
+.card:before{
+  content:"";
+  position:absolute;
+  top:-3px;
+  right:-3px;
+  width:26px;
+  height:26px;
+  background:var(--blue);
+  clip-path:polygon(0 0,100% 0,100% 100%)
+}
+
 .card:nth-child(2):before{background:#fff}
-.band{background:var(--soft);clip-path:polygon(0 8%,100% 0,100% 92%,0 100%);padding:70px 0}
+
+.band{
+  background:var(--soft);
+  clip-path:polygon(0 8%,100% 0,100% 92%,0 100%);
+  padding:70px 0
+}
+
 .band section{padding-top:20px;padding-bottom:20px}
+
 .sess{list-style:none;padding:0}
-.sess li{padding:14px 0;border-bottom:2px solid var(--ink);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+.sess li{
+  padding:14px 0;
+  border-bottom:2px solid var(--ink);
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap
+}
+
 .sess b{color:var(--blue)}
-.cform{display:grid;gap:16px;max-width:620px}
-label{font-weight:600;color:var(--ink);display:block;margin-bottom:4px}
-input,textarea,select{width:100%;font:inherit;padding:12px;border:3px solid var(--ink);background:var(--bg);color:var(--text);border-radius:0}
+
+.partner-intro{
+  max-width:760px;
+  margin-bottom:28px
+}
+
+.partner-note{
+  background:var(--soft);
+  padding:24px;
+  margin-top:26px;
+  border-left:6px solid var(--blue)
+}
+
+.faq-item{
+  padding:18px 0;
+  border-bottom:2px solid var(--ink)
+}
+
+.faq-item h3{
+  font-size:1.1rem;
+  margin-bottom:7px;
+  color:var(--ink)
+}
+
+.cform{
+  display:grid;
+  gap:16px;
+  max-width:620px
+}
+
+label{
+  font-weight:600;
+  color:var(--ink);
+  display:block;
+  margin-bottom:4px
+}
+
+input,textarea,select{
+  width:100%;
+  font:inherit;
+  padding:12px;
+  border:3px solid var(--ink);
+  background:var(--bg);
+  color:var(--text);
+  border-radius:0
+}
+
 textarea{min-height:150px;resize:vertical}
-.contact-wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:40px}
-.shape{min-height:240px;background:var(--blue);clip-path:polygon(0 0,100% 0,100% 100%);position:relative}
-.shape:after{content:"";position:absolute;left:0;bottom:0;width:60%;height:60%;background:var(--ink);clip-path:polygon(0 0,100% 100%,0 100%)}
-footer{background:var(--ink);color:var(--bg);padding:26px 5vw;text-align:center;font-size:.9rem;margin-top:40px;border-top:8px solid var(--blue)}
-@media(max-width:760px){.about,.contact-wrap{grid-template-columns:1fr}.hero:before{width:70vw;opacity:.18}.brand span{display:none}.hero:after{right:6vw;bottom:20%;transform:scale(.6)}}
-@media(prefers-reduced-motion:no-preference){.hero h1{animation:in .8s ease-out both}@keyframes in{from{transform:translateX(-30px);opacity:0}}}
+
+.contact-wrap{
+  display:grid;
+  grid-template-columns:1.3fr 1fr;
+  gap:40px
+}
+
+.shape{
+  min-height:240px;
+  background:var(--blue);
+  clip-path:polygon(0 0,100% 0,100% 100%);
+  position:relative
+}
+
+.shape:after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:60%;
+  height:60%;
+  background:var(--ink);
+  clip-path:polygon(0 0,100% 100%,0 100%)
+}
+
+footer{
+  background:var(--ink);
+  color:var(--bg);
+  padding:26px 5vw;
+  text-align:center;
+  font-size:.9rem;
+  margin-top:40px;
+  border-top:8px solid var(--blue)
+}
+
+footer a{color:#fff}
+
+@media(max-width:760px){
+  .about,.contact-wrap{grid-template-columns:1fr}
+  .hero:before{width:70vw;opacity:.18}
+  .brand span{display:none}
+  .hero:after{right:6vw;bottom:20%;transform:scale(.6)}
+  header{padding-left:4vw;padding-right:4vw}
+  nav button{padding:9px 11px;font-size:.95rem}
+  .band{clip-path:none}
+}
+
+@media(prefers-reduced-motion:no-preference){
+  .hero h1{animation:in .8s ease-out both}
+  @keyframes in{
+    from{transform:translateX(-30px);opacity:0}
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
 </style>
 </head>
+
 <body>
 
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
 <header>
-<div class="brand">
-    <img src="Logo_6.png" alt="Negotiation Club Zurich Logo">
-  <span>Negotiation<br>Club Zurich</span>
-</div>
-<nav role="tablist">
-  <button role="tab" id="t-home" aria-selected="true" data-v="home">Home</button>
-  <button role="tab" id="t-contact" aria-selected="false" data-v="contact">Get in touch</button>
-</nav>
+  <a class="brand" href="#home" aria-label="Negotiation Club Zurich home" onclick="show('home');return false;">
+    <img src="Logo_6.png" alt="Negotiation Club Zurich logo">
+    <span>Negotiation<br>Club Zurich</span>
+  </a>
+
+  <nav role="tablist" aria-label="Main navigation">
+    <button role="tab" id="t-home" aria-selected="true" aria-controls="home" data-v="home">Home</button>
+    <button role="tab" id="t-contact" aria-selected="false" aria-controls="contact" data-v="contact" tabindex="-1">Get in touch</button>
+  </nav>
 </header>
 
-<main>
+<main id="main-content">
+
 <!-- HOME VIEW -->
-<div class="view on" id="home">
+<div class="view on" id="home" role="tabpanel" aria-labelledby="t-home">
+
   <div class="hero">
     <h1>Negotiate with confidence.</h1>
     <p>A Zurich community for students and professionals who want to master the art of reaching better agreements.</p>
     <button class="btn" data-go="contact">Get in touch</button>
   </div>
 
-  <section class="about">
+  <!-- ABOUT -->
+  <section class="about" aria-labelledby="about-heading">
     <div>
-      <h2>About the club</h2>
-      <p>Negotiation Club Zurich brings together people who want to practice negotiation in a safe, structured and friendly setting. Whether you are preparing for a salary talk, a business deal or a difficult conversation, you will find a place to try, fail and improve.</p>
+      <h2 id="about-heading">About the club</h2>
+      <p>Negotiation Club Zurich brings together people who want to practise negotiation in a safe, structured and friendly setting. Whether you are preparing for a salary talk, a business deal or a difficult conversation, you will find a place to try, fail and improve.</p>
+
       <p>Our sessions combine short inputs on proven frameworks with live role-plays and honest peer feedback. Every member leaves with tools they can use the next day.</p>
     </div>
+
     <dl class="facts">
-      <dt>Where</dt><dd>Zurich, Switzerland</dd>
-      <dt>Language</dt><dd>English</dd>
-      <dt>Who can join</dt><dd>Students, young professionals and anyone curious about negotiation</dd>
-      <dt>Format</dt><dd>In-person sessions and workshops</dd>
+      <dt>Where</dt>
+      <dd>Zurich, Switzerland</dd>
+
+      <dt>Language</dt>
+      <dd>English</dd>
+
+      <dt>Who can join</dt>
+      <dd>Students, young professionals and anyone curious about negotiation</dd>
+
+      <dt>Format</dt>
+      <dd>In-person sessions and workshops</dd>
     </dl>
   </section>
 
+  <!-- ACTIVITIES -->
   <div class="band">
-    <section>
-      <h2>What we do</h2>
+    <section aria-labelledby="activities-heading">
+      <h2 id="activities-heading">What we do</h2>
+
       <div class="grid">
-        <div class="card"><h3>Role-play simulations</h3><p>Negotiate realistic cases in pairs and teams, then debrief what worked.</p></div>
-        <div class="card"><h3>Skills workshops</h3><p>Learn preparation, anchoring, BATNA, creating value and closing the deal.</p></div>
-        <div class="card"><h3>Networking</h3><p>Meet motivated people from different universities, companies and industries.</p></div>
+        <article class="card">
+          <h3>Role-play simulations</h3>
+          <p>Negotiate realistic cases in pairs and teams, then debrief what worked and what could be improved.</p>
+        </article>
+
+        <article class="card">
+          <h3>Skills workshops</h3>
+          <p>Learn practical approaches to preparation, anchoring, BATNA, creating value and closing an agreement.</p>
+        </article>
+
+        <article class="card">
+          <h3>Networking</h3>
+          <p>Meet motivated people from different universities, companies and industries who share an interest in negotiation.</p>
+        </article>
       </div>
     </section>
   </div>
 
-  <section>
-    <h2>How a session works</h2>
+  <!-- SESSION FORMAT -->
+  <section aria-labelledby="session-heading">
+    <h2 id="session-heading">How a session works</h2>
+
     <ul class="sess">
       <li><b>Warm-up</b><span>Short introduction to the topic and a key concept</span></li>
       <li><b>Negotiate</b><span>Live case in small groups with assigned roles</span></li>
@@ -115,45 +533,165 @@ footer{background:var(--ink);color:var(--bg);padding:26px 5vw;text-align:center;
     </ul>
   </section>
 
-  <section>
-    <h2>Join us</h2>
-    <p style="margin-bottom:22px;max-width:60ch">New members are welcome at any time. Send us a message to hear about upcoming events.</p>
-    <button class="btn" data-go="contact">Contact the club</button>
+  <!-- UNIVERSITY PARTNERSHIPS -->
+  <div class="band">
+    <section aria-labelledby="university-heading">
+      <h2 id="university-heading">For universities and student organisations</h2>
+
+      <div class="partner-intro">
+        <p>Negotiation is a valuable skill across academic disciplines and professional careers. Negotiation Club Zurich welcomes conversations with universities, student associations and academic organisations interested in practical negotiation education.</p>
+
+        <p>We aim to create opportunities for students to move beyond theory and practise communication, problem-solving and reaching agreements in realistic situations.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Campus workshops</h3>
+          <p>Interactive sessions introducing negotiation concepts through practical exercises and role-play simulations.</p>
+        </article>
+
+        <article class="card">
+          <h3>Student organisation collaborations</h3>
+          <p>Joint events, negotiation challenges and activities that bring students from different disciplines together.</p>
+        </article>
+
+        <article class="card">
+          <h3>Academic collaboration</h3>
+          <p>Opportunities to explore guest sessions, extracurricular learning formats and interdisciplinary events.</p>
+        </article>
+      </div>
+
+      <div class="partner-note">
+        <p><strong>Interested in collaborating?</strong> We would be happy to discuss a format that fits your students, programme or organisation.</p>
+        <p style="margin-top:16px">
+          <button class="btn" data-go="contact" data-subject="University partnership">Discuss a university partnership</button>
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <!-- CORPORATE PARTNERSHIPS -->
+  <section aria-labelledby="corporate-heading">
+    <h2 id="corporate-heading">For companies and organisations</h2>
+
+    <div class="partner-intro">
+      <p>Effective negotiation is essential in business: from managing client relationships and commercial discussions to resolving internal challenges and building stronger teams.</p>
+
+      <p>Negotiation Club Zurich is interested in connecting with companies that want to support practical negotiation learning and explore interactive workshop opportunities.</p>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <h3>Team workshops</h3>
+        <p>Interactive exercises that allow teams to practise negotiation, communication and collaborative problem-solving.</p>
+      </article>
+
+      <article class="card">
+        <h3>Customised simulations</h3>
+        <p>Explore realistic negotiation scenarios inspired by business situations, commercial relationships and workplace conversations.</p>
+      </article>
+
+      <article class="card">
+        <h3>Community partnerships</h3>
+        <p>Support events and learning opportunities that connect students, young professionals and experienced practitioners.</p>
+      </article>
+    </div>
+
+    <div class="partner-note">
+      <p><strong>Looking to explore a partnership?</strong> Tell us about your organisation and what you have in mind. We can discuss possible formats and areas of mutual interest.</p>
+      <p style="margin-top:16px">
+        <button class="btn btn-blue" data-go="contact" data-subject="Corporate partnership">Discuss a corporate partnership</button>
+      </p>
+    </div>
   </section>
+
+  <!-- FAQ -->
+  <div class="band">
+    <section aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Frequently asked questions</h2>
+
+      <div class="faq-item">
+        <h3>What is Negotiation Club Zurich?</h3>
+        <p>Negotiation Club Zurich is an English-speaking community in Zurich where students and professionals can develop practical negotiation skills through interactive sessions, role-play simulations and peer feedback.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Who can participate?</h3>
+        <p>Students, young professionals and anyone interested in improving their negotiation skills are welcome. You do not need previous negotiation experience.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Are the sessions held in English?</h3>
+        <p>Yes. English is the working language of the club.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can a university or company collaborate with the club?</h3>
+        <p>Yes. We welcome enquiries from universities, student organisations, companies and other organisations interested in negotiation workshops, joint events or other forms of collaboration.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How can I get involved?</h3>
+        <p>Use the contact form to ask about membership, upcoming sessions or partnership opportunities.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- JOIN -->
+  <section aria-labelledby="join-heading">
+    <h2 id="join-heading">Join us</h2>
+    <p style="margin-bottom:22px;max-width:60ch">New members are welcome at any time. Send us a message to hear about upcoming events and opportunities to get involved.</p>
+    <button class="btn" data-go="contact" data-subject="Becoming a member">Contact the club</button>
+  </section>
+
 </div>
 
 <!-- CONTACT VIEW -->
-<div class="view" id="contact">
+<div class="view" id="contact" role="tabpanel" aria-labelledby="t-contact" hidden>
   <section>
     <h2>Get in touch</h2>
+
     <div class="contact-wrap">
       <div>
-        <p style="margin-bottom:22px">Questions about membership, events or partnerships? Send us a message and we will reply as soon as possible.</p>
-        
+        <p style="margin-bottom:22px">Questions about membership, events, university collaborations or corporate partnerships? Send us a message and we will reply as soon as possible.</p>
+
         <form action="https://formspree.io/f/mjygnaog" method="POST" class="cform" id="f">
+
+          <input type="hidden" name="_subject" value="Website enquiry - Negotiation Club Zurich">
+
+          <!-- Spam protection honeypot -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+
           <div>
             <label for="n">Name</label>
             <input id="n" type="text" name="name" required autocomplete="name">
           </div>
+
           <div>
             <label for="e">Email</label>
             <input id="e" type="email" name="email" required autocomplete="email">
           </div>
+
           <div>
             <label for="s">Subject</label>
             <select id="s" name="subject">
               <option>Becoming a member</option>
               <option>Upcoming events</option>
-              <option>Partnerships</option>
+              <option>University partnership</option>
+              <option>Corporate partnership</option>
+              <option>Other enquiry</option>
             </select>
           </div>
+
           <div>
             <label for="m">Message</label>
-            <textarea id="m" name="message" required></textarea>
+            <textarea id="m" name="message" required placeholder="Tell us a little about your enquiry..."></textarea>
           </div>
+
           <button type="submit" class="btn" style="justify-self:start">Send message</button>
         </form>
       </div>
+
       <div class="shape" aria-hidden="true"></div>
     </div>
   </section>
@@ -161,16 +699,66 @@ footer{background:var(--ink);color:var(--bg);padding:26px 5vw;text-align:center;
 
 </main>
 
-<footer>&copy; 2026 Negotiation Club Zurich</footer>
+<footer>
+  <p>&copy; 2026 Negotiation Club Zurich · Zurich, Switzerland</p>
+  <p style="margin-top:6px">An English-speaking community for practical negotiation learning.</p>
+</footer>
 
 <script>
 function show(v){
-  document.querySelectorAll('.view').forEach(x=>x.classList.toggle('on',x.id===v));
-  document.querySelectorAll('nav button').forEach(b=>b.setAttribute('aria-selected',b.dataset.v===v));
-  window.scrollTo(0,0);
+  const views = document.querySelectorAll('.view');
+  const tabs = document.querySelectorAll('nav button');
+
+  views.forEach(x => {
+    const active = x.id === v;
+    x.classList.toggle('on', active);
+    x.hidden = !active;
+  });
+
+  tabs.forEach(b => {
+    const active = b.dataset.v === v;
+    b.setAttribute('aria-selected', active ? 'true' : 'false');
+    b.tabIndex = active ? 0 : -1;
+  });
+
+  window.scrollTo({top:0, behavior:'auto'});
 }
-document.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>show(b.dataset.v));
-document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>show(b.dataset.go));
+
+document.querySelectorAll('[data-v]').forEach(b => {
+  b.addEventListener('click', () => show(b.dataset.v));
+});
+
+document.querySelectorAll('[data-go]').forEach(b => {
+  b.addEventListener('click', () => {
+    show(b.dataset.go);
+
+    if(b.dataset.subject){
+      const subject = document.getElementById('s');
+      if(subject){
+        subject.value = b.dataset.subject;
+      }
+    }
+  });
+});
+
+/* Keyboard navigation for the tab controls */
+document.querySelectorAll('nav button[role="tab"]').forEach((tab, index, tabs) => {
+  tab.addEventListener('keydown', event => {
+    let nextIndex = index;
+
+    if(event.key === 'ArrowRight'){
+      nextIndex = (index + 1) % tabs.length;
+    } else if(event.key === 'ArrowLeft'){
+      nextIndex = (index - 1 + tabs.length) % tabs.length;
+    } else {
+      return;
+    }
+
+    event.preventDefault();
+    tabs[nextIndex].focus();
+    show(tabs[nextIndex].dataset.v);
+  });
+});
 </script>
 
 </body>
