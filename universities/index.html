@@ -1,1 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>University Negotiation Workshops in Zurich | Negotiation Club Zurich</title>
+
+<meta name="description" content="Explore university negotiation workshops and collaboration opportunities in Zurich. Negotiation Club Zurich connects students through practical simulations, interactive training and peer learning.">
+
+<meta name="keywords" content="university negotiation workshops Zurich, negotiation training students, student negotiation club Zurich, negotiation skills university, university partnerships Zurich">
+
+<meta name="author" content="Negotiation Club Zurich">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1565C0">
+
+<link rel="canonical" href="https://negotiationclubzurich.ch/universities/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="University Partnerships | Negotiation Club Zurich">
+<meta property="og:description" content="Bring practical negotiation learning to your university through interactive workshops, simulations and student collaborations.">
+<meta property="og:url" content="https://negotiationclubzurich.ch/universities/">
+<meta property="og:image" content="https://negotiationclubzurich.ch/Logo_6.png">
+
+<link rel="icon" href="/Logo_6.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Archivo+Narrow:wght@600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "University Partnerships | Negotiation Club Zurich",
+  "url": "https://negotiationclubzurich.ch/universities/",
+  "description": "Information about negotiation workshops and collaboration opportunities for universities and student organisations in Zurich.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Negotiation Club Zurich",
+    "url": "https://negotiationclubzurich.ch/"
+  },
+  "about": {
+    "@type": "Organization",
+    "name": "Negotiation Club Zurich",
+    "url": "https://negotiationclubzurich.ch/",
+    "areaServed": {
+      "@type": "City",
+      "name": "Zurich"
+    }
+  }
+}
+</script>
+
+<style>
+:root {
+  --blue: #1565C0;
+  --bg: #fff;
+  --ink: #000;
+  --soft: #EAF1FA;
+  --text: #1a1a1a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Archivo', Arial, sans-serif;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--blue);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg);
+  border-bottom: 4px solid var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5vw;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 800;
+  color: var(--ink);
+  font-size: 1.05rem;
+  line-height: 1.1;
+  text-decoration: none;
+}
+
+.brand img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  display: inline-block;
+  padding: 10px 14px;
+  color: var(--ink);
+  text-decoration: none;
+  font: 600 1rem 'Archivo Narrow', Arial, sans-serif;
+  transition: background .2s ease, color .2s ease;
+}
+
+.main-nav .nav-link:hover,
+.main-nav .nav-link:focus-visible {
+  background: var(--soft);
+  color: var(--blue);
+}
+
+.main-nav .active {
+  background: var(--soft);
+  color: var(--blue);
+}
+
+.main-nav .nav-contact {
+  background: var(--blue);
+  color: #fff;
+  padding: 11px 20px;
+  clip-path: polygon(0 0,100% 0,calc(100% - 12px) 100%,0 100%);
+}
+
+.main-nav .nav-contact:hover {
+  background: #0d4d96;
+}
+
+.main-nav a:focus-visible,
+.btn:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.hero {
+  position: relative;
+  background: var(--blue);
+  color: #fff;
+  padding: 100px 5vw 130px;
+  clip-path: polygon(0 0,100% 0,100% 84%,0 100%);
+  overflow: hidden;
+}
+
+.hero:before {
+  content: "";
+  position: absolute;
+  right: -8vw;
+  top: 0;
+  width: 46vw;
+  height: 140%;
+  background: #fff;
+  opacity: .95;
+  clip-path: polygon(40% 0,100% 0,100% 100%,0 100%);
+}
+
+.hero:after {
+  content: "";
+  position: absolute;
+  right: 12vw;
+  bottom: 14%;
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 120px solid #000;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem,7vw,5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  max-width: 12ch;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 48ch;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: 0;
+  font: 600 1.05rem 'Archivo Narrow', Arial, sans-serif;
+  padding: 14px 28px;
+  cursor: pointer;
+  text-decoration: none;
+  clip-path: polygon(0 0,100% 0,calc(100% - 14px) 100%,0 100%);
+}
+
+.btn:hover {
+  background: #222;
+}
+
+.btn-blue {
+  background: var(--blue);
+}
+
+.btn-blue:hover {
+  background: #0d4d96;
+}
+
+section {
+  padding: 65px 5vw;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  font-size: clamp(1.7rem,4vw,2.5rem);
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 22px;
+  padding-left: 18px;
+  border-left: 12px solid var(--blue);
+}
+
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+
+p + p {
+  margin-top: 14px;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.facts {
+  background: var(--soft);
+  padding: 28px;
+  clip-path: polygon(0 0,100% 0,100% calc(100% - 28px),calc(100% - 28px) 100%,0 100%);
+}
+
+.facts dt {
+  font-weight: 800;
+  color: var(--blue);
+}
+
+.facts dd {
+  margin: 0 0 14px;
+}
+
+.band {
+  background: var(--soft);
+  clip-path: polygon(0 5%,100% 0,100% 95%,0 100%);
+  padding: 75px 0;
+}
+
+.band section {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+  gap: 22px;
+}
+
+.card {
+  border: 3px solid var(--ink);
+  padding: 25px;
+  position: relative;
+  background: var(--bg);
+}
+
+.card:nth-child(2) {
+  background: var(--blue);
+  color: #fff;
+  border-color: var(--blue);
+}
+
+.card:nth-child(3) {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 26px;
+  height: 26px;
+  background: var(--blue);
+  clip-path: polygon(0 0,100% 0,100% 100%);
+}
+
+.card:nth-child(2):before {
+  background: #fff;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+}
+
+.lead {
+  max-width: 760px;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  background: var(--soft);
+  border-left: 7px solid var(--blue);
+  padding: 25px;
+  margin-top: 30px;
+}
+
+.steps {
+  list-style: none;
+  padding: 0;
+}
+
+.steps li {
+  padding: 18px 0;
+  border-bottom: 2px solid var(--ink);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.steps strong {
+  color: var(--blue);
+}
+
+.faq-item {
+  padding: 20px 0;
+  border-bottom: 2px solid var(--ink);
+}
+
+.faq-item h3 {
+  color: var(--ink);
+}
+
+.cta {
+  background: var(--blue);
+  color: #fff;
+  padding: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta h2 {
+  color: #fff;
+  border-color: #000;
+}
+
+.cta p {
+  max-width: 60ch;
+  margin-bottom: 22px;
+}
+
+.contact-note {
+  font-size: .95rem;
+  margin-top: 15px;
+}
+
+footer {
+  background: var(--ink);
+  color: var(--bg);
+  padding: 28px 5vw;
+  text-align: center;
+  font-size: .9rem;
+  border-top: 8px solid var(--blue);
+}
+
+footer a {
+  color: #fff;
+}
+
+@media(max-width:900px) {
+  header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .main-nav {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .intro-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width:760px) {
+  .hero {
+    padding: 80px 5vw 110px;
+  }
+
+  .hero:before {
+    width: 70vw;
+    opacity: .18;
+  }
+
+  .hero:after {
+    right: 6vw;
+    bottom: 20%;
+    transform: scale(.6);
+  }
+
+  .band {
+    clip-path: none;
+  }
+
+  .cta {
+    padding: 32px 24px;
+  }
+}
+
+@media(max-width:520px) {
+  .brand span {
+    display: none;
+  }
+
+  .main-nav {
+    gap: 3px;
+  }
+
+  .main-nav a {
+    padding: 9px 10px;
+    font-size: .95rem;
+  }
+
+  .main-nav .nav-contact {
+    padding: 9px 13px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,*::before,*::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a class="brand" href="/" aria-label="Negotiation Club Zurich home">
+    <img src="/Logo_6.png" alt="Negotiation Club Zurich logo">
+    <span>Negotiation<br>Club Zurich</span>
+  </a>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="/" class="nav-link">Home</a>
+    <a href="/universities/" class="nav-link active" aria-current="page">Universities</a>
+    <a href="/companies/" class="nav-link">Companies</a>
+    <a href="/workshops/" class="nav-link">Workshops</a>
+    <a href="/#contact" class="nav-contact">Get in touch</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-content">
+    <h1>Bring negotiation skills to your university.</h1>
+
+    <p>
+      Practical negotiation learning for students.
+      Interactive workshops, realistic simulations and opportunities
+      to connect with people who want to become better negotiators.
+    </p>
+
+    <a class="btn" href="#collaborate">
+      Explore collaboration
+    </a>
+  </div>
+</div>
+
+<!-- INTRODUCTION -->
+<section>
+  <div class="intro-grid">
+
+    <div>
+      <h2>Negotiation education beyond the classroom</h2>
+
+      <p>
+        Negotiation is a fundamental skill in academic life and in almost
+        every professional environment. Students negotiate in group
+        projects, internships, job interviews, salary discussions and
+        future business relationships.
+      </p>
+
+      <p>
+        Negotiation Club Zurich creates opportunities to practise these
+        skills in a structured, supportive and interactive environment.
+        Participants work through realistic scenarios, experiment with
+        different approaches and learn from feedback.
+      </p>
+
+      <p>
+        We welcome conversations with universities, academic departments
+        and student organisations interested in making practical
+        negotiation learning more accessible.
+      </p>
+    </div>
+
+    <dl class="facts">
+      <dt>Location</dt>
+      <dd>Zurich, Switzerland</dd>
+
+      <dt>Working language</dt>
+      <dd>English</dd>
+
+      <dt>Target audience</dt>
+      <dd>University students and student communities</dd>
+
+      <dt>Learning format</dt>
+      <dd>Interactive workshops, role-play simulations and group exercises</dd>
+
+      <dt>Collaboration</dt>
+      <dd>Universities, academic departments and student organisations</dd>
+    </dl>
+
+  </div>
+</section>
+
+<!-- WHY NEGOTIATION -->
+<div class="band">
+<section>
+  <h2>Why negotiation skills matter for students</h2>
+
+  <p class="lead">
+    Academic knowledge is important, but students also benefit from
+    learning how to communicate interests, manage disagreement and
+    reach constructive agreements.
+  </p>
+
+  <div class="grid">
+
+    <article class="card">
+      <h3>Professional preparation</h3>
+      <p>
+        Develop confidence for job interviews, salary conversations,
+        internships and future workplace discussions.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Communication and collaboration</h3>
+      <p>
+        Practise listening, asking effective questions, understanding
+        different perspectives and managing conflicting interests.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Practical problem-solving</h3>
+      <p>
+        Learn to identify interests, generate options and work towards
+        agreements that create value for different parties.
+      </p>
+    </article>
+
+  </div>
+</section>
+</div>
+
+<!-- WORKSHOP FORMATS -->
+<section>
+  <h2>Possible university workshop formats</h2>
+
+  <p class="lead">
+    We are open to discussing different formats depending on the
+    objectives, audience and available time of your institution.
+  </p>
+
+  <div class="grid">
+
+    <article class="card">
+      <h3>Introduction to negotiation</h3>
+      <p>
+        An accessible introduction to negotiation principles,
+        preparation and communication. Suitable for students with
+        little or no previous experience.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Interactive negotiation simulations</h3>
+      <p>
+        Participants take on different roles in realistic negotiation
+        cases and practise applying concepts in small groups.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Focused skills workshops</h3>
+      <p>
+        Sessions exploring topics such as BATNA, anchoring, interests,
+        creating value, persuasion and reaching agreements.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Student community events</h3>
+      <p>
+        Joint events and activities that bring together students
+        interested in negotiation, communication and professional
+        development.
+      </p>
+    </article>
+
+  </div>
+</section>
+
+<!-- TOPICS -->
+<div class="band">
+<section>
+  <h2>Topics students can practise</h2>
+
+  <p class="lead">
+    Depending on the workshop objectives, exercises can explore
+    a range of practical negotiation concepts.
+  </p>
+
+  <ul class="steps">
+    <li>
+      <strong>Preparation and strategy</strong>
+      <span>Clarifying objectives, priorities and alternatives before a negotiation</span>
+    </li>
+
+    <li>
+      <strong>BATNA and ZOPA</strong>
+      <span>Understanding alternatives and possible agreement zones</span>
+    </li>
+
+    <li>
+      <strong>Anchoring and offers</strong>
+      <span>Making and responding to proposals effectively</span>
+    </li>
+
+    <li>
+      <strong>Interests and value creation</strong>
+      <span>Moving beyond positions to explore mutual gains</span>
+    </li>
+
+    <li>
+      <strong>Communication and active listening</strong>
+      <span>Asking questions, understanding perspectives and building trust</span>
+    </li>
+
+    <li>
+      <strong>Closing agreements</strong>
+      <span>Evaluating options and reaching clear, workable outcomes</span>
+    </li>
+  </ul>
+</section>
+</div>
+
+<!-- HOW IT WORKS -->
+<section>
+  <h2>How a workshop can work</h2>
+
+  <p class="lead">
+    Our practical learning approach combines short theoretical inputs
+    with active participation and structured reflection.
+  </p>
+
+  <ul class="steps">
+    <li>
+      <strong>1. Introduction</strong>
+      <span>Introduce the negotiation topic and key concepts.</span>
+    </li>
+
+    <li>
+      <strong>2. Preparation</strong>
+      <span>Participants receive a case and prepare their negotiation strategy.</span>
+    </li>
+
+    <li>
+      <strong>3. Simulation</strong>
+      <span>Participants negotiate in pairs or small groups.</span>
+    </li>
+
+    <li>
+      <strong>4. Debrief</strong>
+      <span>Discuss approaches, outcomes and lessons learned.</span>
+    </li>
+
+    <li>
+      <strong>5. Reflection</strong>
+      <span>Identify techniques participants can apply in everyday situations.</span>
+    </li>
+  </ul>
+</section>
+
+<!-- COLLABORATION -->
+<div class="band">
+<section id="collaborate">
+  <h2>Let's explore a university collaboration</h2>
+
+  <p class="lead">
+    We are interested in connecting with universities and student
+    organisations in Zurich that want to explore practical negotiation
+    education and extracurricular learning opportunities.
+  </p>
+
+  <div class="grid">
+
+    <article class="card">
+      <h3>Universities and faculties</h3>
+      <p>
+        Explore possible workshops, guest sessions and complementary
+        learning activities for students.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Student associations</h3>
+      <p>
+        Discuss joint events, negotiation challenges and interactive
+        activities for your members.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Career and development initiatives</h3>
+      <p>
+        Explore practical learning opportunities that complement
+        students' professional development.
+      </p>
+    </article>
+
+  </div>
+
+  <div class="highlight">
+    <h3>Have an idea for a collaboration?</h3>
+
+    <p>
+      Tell us about your institution, your students and the kind of
+      negotiation activity you would like to explore. We would be
+      happy to discuss possible formats.
+    </p>
+
+    <p style="margin-top:20px">
+      <a class="btn btn-blue" href="/#contact">
+        Get in touch about a partnership
+      </a>
+    </p>
+  </div>
+</section>
+</div>
+
+<!-- FAQ -->
+<section>
+  <h2>Frequently asked questions</h2>
+
+  <div class="faq-item">
+    <h3>Who are university negotiation workshops for?</h3>
+    <p>
+      They can be designed for university students, student associations
+      and academic communities interested in developing practical
+      negotiation and communication skills. Previous experience is
+      not required for introductory activities.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Do participants need previous negotiation experience?</h3>
+    <p>
+      No. Introductory formats can be designed for beginners.
+      More focused sessions can also explore specific negotiation
+      techniques and frameworks.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Can workshops be adapted to our university?</h3>
+    <p>
+      We are open to discussing the learning objectives, target
+      audience and format with each interested institution.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Can student organisations organise joint events?</h3>
+    <p>
+      Yes. We welcome enquiries from student associations and
+      initiatives interested in exploring joint events and
+      negotiation-related activities.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Are the activities conducted in English?</h3>
+    <p>
+      English is the working language of Negotiation Club Zurich.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>How can our institution get in touch?</h3>
+    <p>
+      Use the contact button on this page to send us an enquiry.
+      Please include your institution and the type of collaboration
+      you would like to explore.
+    </p>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section>
+  <div class="cta">
+    <h2>Let's make negotiation a practical skill.</h2>
+
+    <p>
+      Interested in bringing negotiation workshops, simulations
+      or joint learning activities to your university community?
+      We would be glad to hear from you.
+    </p>
+
+    <a class="btn" href="/#contact">
+      Contact Negotiation Club Zurich
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Negotiation Club Zurich · Zurich, Switzerland</p>
+  <p style="margin-top:8px">
+    <a href="/">Home</a> ·
+    <a href="/universities/">Universities</a> ·
+    <a href="/companies/">Companies</a> ·
+    <a href="/workshops/">Workshops</a> ·
+    <a href="/#contact">Get in touch</a>
+  </p>
+</footer>
+
+</body>
+</html>
